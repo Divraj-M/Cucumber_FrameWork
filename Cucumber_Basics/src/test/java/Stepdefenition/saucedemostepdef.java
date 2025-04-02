@@ -30,7 +30,7 @@ public class saucedemostepdef {
     
 	@Given("Iam in the SauseDemo Login Page")
 	public void iam_in_the_sause_demo_login_page() {
-		System.out.println("In the Sauce demo login page");
+		System.out.println("In the Sauce demo login page ");
 	  
 		  
 	}
@@ -114,7 +114,7 @@ public void i_want_to_see_error_message_of_no_password() {
 	String Orginal = "Epic sadface: Password is required";
 	assertEquals(Orginal, Expected);
 }
-
+ 
 @After
 public void teardown()
 {
