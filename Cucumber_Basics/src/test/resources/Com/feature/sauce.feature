@@ -31,7 +31,7 @@ Feature: Sause Demo Login
     And Clicking on the login button
     Then I want to verify that i am logged in or not
 
-  @edge
+  @firefox
   Scenario: As a user i want to log in to my sausedemo with invalid credentials 
     #Given Iam in the SauseDemo Login Page
     When The user provides invalid the Username 
@@ -40,7 +40,7 @@ Feature: Sause Demo Login
     Then i want to see error message
     
     
-  @edge
+  @chrome
   Scenario: As a user i want to log in to my sausedemo with invalid credentials 
     #Given Iam in the SauseDemo Login Page
     When The user provides the Username 
