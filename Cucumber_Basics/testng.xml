@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-      <class name="runnerfile.saucedemorunnertestng"/>
+<class name="runnerfile.outlinerunner"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
