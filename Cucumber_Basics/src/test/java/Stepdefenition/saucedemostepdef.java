@@ -10,19 +10,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 
 public class saucedemostepdef {
 	
 
-    WebDriver driver = new FirefoxDriver();
+    WebDriver driver;
+    @Before
+    public void setup()
+    {
+    	driver=new FirefoxDriver();
+    	driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.get("https://www.saucedemo.com");
+    	
+    }
+    
 	@Given("Iam in the SauseDemo Login Page")
 	public void iam_in_the_sause_demo_login_page() {
+		System.out.println("In the Sauce demo login page");
 	  
-		  driver.manage().window().maximize();
-	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
-	        driver.get("https://www.saucedemo.com");
+		  
 	}
 
 	@When("The user provides the Username")
@@ -103,6 +113,12 @@ public void i_want_to_see_error_message_of_no_password() {
 	String Expected = error.getText();
 	String Orginal = "Epic sadface: Password is required";
 	assertEquals(Orginal, Expected);
+}
+
+@After
+public void teardown()
+{
+	driver.close();
 }
 
 
