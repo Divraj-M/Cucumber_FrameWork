@@ -10,6 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,15 +20,31 @@ import io.cucumber.java.en.When;
 public class Loginstepdef {
 	WebDriver driver;
 	
-	@Given("I am in the orange HRM login page")
-	public void i_am_in_the_orange_hrm_login_page() {
+	@Before
+	public void setup()
+	{
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	}
+	
+	@Given("I am in the orange HRM login page")
+	public void i_am_in_the_orange_hrm_login_page() {
+		
 		
 	}
+	@BeforeStep
 
+	public void stepbefore()
+	{
+		System.out.println("in the before step");
+	}
+	@AfterStep
+	public void stepafter()
+	{
+		System.out.println("in the after step");
+	}
 	@When("user provides the valid user ID")
 	public void user_provides_the_valid_user_id() {
 	    driver.findElement(By.name("username")).sendKeys("Admin");;
@@ -52,11 +71,6 @@ public class Loginstepdef {
 		
 		
 	}
-	@Then("quit")
-	public void quit() {
-		driver.quit();
-			
-		
-	}
+	
 
 }

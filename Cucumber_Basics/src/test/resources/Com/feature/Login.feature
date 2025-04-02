@@ -27,7 +27,6 @@ Feature: Login Feature
     And user provides clid password
     And user click the login button
     Then I should see a dashboard text in the home page 
-    And quit
   #@tag2
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
