@@ -23,7 +23,7 @@ Feature: Sause Demo Login
   Background:
   Given Iam in the SauseDemo Login Page
   
-  @ValidCredential @validusernameandpass
+  @ValidCredential
   Scenario: As a user i want to log in to my sausedemo 
     
     When The user provides the Username 
@@ -31,7 +31,7 @@ Feature: Sause Demo Login
     And Clicking on the login button
     Then I want to verify that i am logged in or not
 
-  @Invalid-1 @edge
+  @edge
   Scenario: As a user i want to log in to my sausedemo with invalid credentials 
     #Given Iam in the SauseDemo Login Page
     When The user provides invalid the Username 
@@ -40,7 +40,7 @@ Feature: Sause Demo Login
     Then i want to see error message
     
     
-  @Invalid-2 @edge
+  @edge
   Scenario: As a user i want to log in to my sausedemo with invalid credentials 
     #Given Iam in the SauseDemo Login Page
     When The user provides the Username 
@@ -48,7 +48,7 @@ Feature: Sause Demo Login
     And Clicking on the login button
     Then i want to see error message
     
-     @Invalid-3 @firefox
+    @firefox
   Scenario: As a user i want to log in to my sausedemo with Blank credentials 
     #Given Iam in the SauseDemo Login Page
     When The user provides no username
@@ -57,7 +57,7 @@ Feature: Sause Demo Login
     Then i want to see error message of No username
     
     
-  @Invalid-4 @firefox
+  @firefox
   Scenario: As a user i want to log in to my sausedemo with Blank credentials 
     #Given Iam in the SauseDemo Login Page
     When The user provides the Username 

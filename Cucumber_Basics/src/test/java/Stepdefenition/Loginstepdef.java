@@ -20,17 +20,14 @@ import io.cucumber.java.en.When;
 public class Loginstepdef {
 	WebDriver driver;
 	
-	@Before
-	public void setup()
-	{
+	
+	
+	@Given("I am in the orange HRM login page")
+	public void i_am_in_the_orange_hrm_login_page() {
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	}
-	
-	@Given("I am in the orange HRM login page")
-	public void i_am_in_the_orange_hrm_login_page() {
 		
 		
 	}
