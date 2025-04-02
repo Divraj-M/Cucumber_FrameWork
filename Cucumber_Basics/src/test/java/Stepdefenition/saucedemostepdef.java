@@ -33,15 +33,15 @@ public class saucedemostepdef {
         driver.get("https://www.saucedemo.com");
     	
     }
-    @Before("@edge")
-    public void edge()
-    {
-    	driver=new EdgeDriver();
-    	driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("https://www.saucedemo.com");
-    	
-    }
+//    @Before("@edge")
+//    public void edge()
+//    {
+//    	driver=new EdgeDriver();
+//    	driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//        driver.get("https://www.saucedemo.com");
+//    	
+//    }
     @Before("@firefox")
     public void firefox()
     {
