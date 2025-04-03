@@ -14,27 +14,27 @@
 #@ (Tags/Labels):To group Scenarios
 #<> (placeholder)
 #""
-## (Comments)
+# (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
-
-   @OrangeValidation
-  Scenario Outline: Login with valid credentials
-    Given User is on Home Screen
-    When User enters UserName as "<username>" and Password as "<password>"
-    Then User should see the Dashboard page as "<asserting>"
-    And Verify the Quick launch options as "<Options>" 
-    
-
-
-  Examples: 
-      |username  |password |asserting      |Options          |
-      |Admin     |admin123 |Dashboard       |Assign Leave     |
-      |Admin     |admin123 |Dashboard       |Leave List       |
-      |Admin     |admin123 |Dashboard       |Timesheets       |
-      |Admin     |admin123 |Dashboard       |Apply Leave      |
-      |Admin     |admin123 |Dashboard       |My Leave         |
-      |Admin     |admin123 |Dashboard       |My Timesheet     |
-      
+#@tag
+#Feature: Title of your feature
+  #I want to use this template for my feature file
+#
+   #@OrangeValidation
+  #Scenario Outline: Login with valid credentials
+    #Given User is on Home Screen
+    #When User enters UserName as "<username>" and Password as "<password>"
+    #Then User should see the Dashboard page as "<asserting>"
+    #And Verify the Quick launch options as "<Options>" 
+    #
+#
+#
+  #Examples: 
+      #|username  |password |asserting      |Options          |
+      #|Admin     |admin123 |Dashboard       |Assign Leave     |
+      #|Admin     |admin123 |Dashboard       |Leave List       |
+      #|Admin     |admin123 |Dashboard       |Timesheets       |
+      #|Admin     |admin123 |Dashboard       |Apply Leave      |
+      #|Admin     |admin123 |Dashboard       |My Leave         |
+      #|Admin     |admin123 |Dashboard       |My Timesheet     |
+      #
