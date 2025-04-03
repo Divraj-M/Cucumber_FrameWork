@@ -14,12 +14,18 @@ import io.cucumber.java.en.*;
 
 public class datatablestepdef {
 	WebDriver driver;
+	@Before
+	public void setup()
+	{
+		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
+	}
 @Given("The user is on Orange HRM")
 public void the_user_is_on_orange_hrm() {
-	driver=new ChromeDriver();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	driver.manage().window().maximize();
-	//driver.manage().deleteAllCookies();
+	
 	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 }
 
