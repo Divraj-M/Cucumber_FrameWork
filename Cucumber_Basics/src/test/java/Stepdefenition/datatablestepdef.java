@@ -19,7 +19,7 @@ public void the_user_is_on_orange_hrm() {
 	driver=new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.manage().window().maximize();
-	driver.manage().deleteAllCookies();
+	//driver.manage().deleteAllCookies();
 	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 }
 
