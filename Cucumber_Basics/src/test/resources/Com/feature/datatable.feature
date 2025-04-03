@@ -16,19 +16,15 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-#@tag
-#Feature: Scenario outline
-  #I am using this to chek the following is working accordingly
-#
-  #@InvalidCredentials1
-  #Scenario Outline: Login with valid credentials
-    #Given User is on Home Screen
-    #When User enters UserName as "<username>" and Password as "<password>"
-    #Then User should be able to see an "<error>"
-#
-#
-  #Examples: 
-      #|username  |password |errorMessage                |
-      #|Admin     |admin1   |Invalid credentials        |
-      #|          |admin123 |Required    |
-      #|Admin     |         |Required    |
+@tag
+Feature: Data Table
+  Useage of Data Table
+
+  @Validate
+  Scenario: Orange HRM
+    Given The user is on Orange HRM
+    When User enters valid credentials
+      |Username|Password  |ErrorMessage       |
+      |Admin   | admin12  |Invalid credentials|
+      |Admin   |admin     |Invalid credentials|
+    Then user should be able to login sucessfully and new page open

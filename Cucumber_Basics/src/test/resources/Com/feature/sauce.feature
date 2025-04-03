@@ -16,52 +16,52 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Sause Demo Login 
-  I want to use this for my Sausedemo login
-  
-  Background:
-  Given Iam in the SauseDemo Login Page
-  
-  @ValidCredential
-  Scenario: As a user i want to log in to my sausedemo 
-    
-    When The user provides the Username 
-    And The User provides the Passowrd
-    And Clicking on the login button
-    Then I want to verify that i am logged in or not
-
-  @firefox
-  Scenario: As a user i want to log in to my sausedemo with invalid credentials 
+#@tag
+#Feature: Sause Demo Login 
+  #I want to use this for my Sausedemo login
+  #
+  #Background:
+  #Given Iam in the SauseDemo Login Page
+  #
+  #@ValidCredential
+  #Scenario: As a user i want to log in to my sausedemo 
+    #
+    #When The user provides the Username 
+    #And The User provides the Passowrd
+    #And Clicking on the login button
+    #Then I want to verify that i am logged in or not
+#
+  #@firefox
+  #Scenario: As a user i want to log in to my sausedemo with invalid credentials 
     #Given Iam in the SauseDemo Login Page
-    When The user provides invalid the Username 
-    And The User provides the Passowrd
-    And Clicking on the login button
-    Then i want to see error message
-    
-    
-  @chrome
-  Scenario: As a user i want to log in to my sausedemo with invalid credentials 
+    #When The user provides invalid the Username 
+    #And The User provides the Passowrd
+    #And Clicking on the login button
+    #Then i want to see error message
+    #
+    #
+  #@chrome
+  #Scenario: As a user i want to log in to my sausedemo with invalid credentials 
     #Given Iam in the SauseDemo Login Page
-    When The user provides the Username 
-    And The User provides invalid the Passowrd
-    And Clicking on the login button
-    Then i want to see error message
-    
-    @firefox
-  Scenario: As a user i want to log in to my sausedemo with Blank credentials 
+    #When The user provides the Username 
+    #And The User provides invalid the Passowrd
+    #And Clicking on the login button
+    #Then i want to see error message
+    #
+    #@firefox
+  #Scenario: As a user i want to log in to my sausedemo with Blank credentials 
     #Given Iam in the SauseDemo Login Page
-    When The user provides no username
-    And The User provides the Passowrd
-    And Clicking on the login button
-    Then i want to see error message of No username
-    
-    
-  @firefox
-  Scenario: As a user i want to log in to my sausedemo with Blank credentials 
+    #When The user provides no username
+    #And The User provides the Passowrd
+    #And Clicking on the login button
+    #Then i want to see error message of No username
+    #
+    #
+  #@firefox
+  #Scenario: As a user i want to log in to my sausedemo with Blank credentials 
     #Given Iam in the SauseDemo Login Page
-    When The user provides the Username 
-    And The User provides no Passowrd
-    And Clicking on the login button
-    Then i want to see error message of no Password
+    #When The user provides the Username 
+    #And The User provides no Passowrd
+    #And Clicking on the login button
+    #Then i want to see error message of no Password
     

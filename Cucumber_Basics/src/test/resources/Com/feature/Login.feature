@@ -17,16 +17,16 @@
 ## (Comments)
 #Sample Feature Definition Template
 #@tag
-Feature: Login Feature
-  I want to use this feature file for login in the orange HRM 
-
-  @ValidCredentials
-  Scenario: To test orange HRM Web application using valid credentials
-    Given I am in the orange HRM login page
-    When user provides the valid user ID
-    And user provides clid password
-    And user click the login button
-    Then I should see a dashboard text in the home page 
+#Feature: Login Feature
+  #I want to use this feature file for login in the orange HRM 
+#
+  #@ValidCredentials
+  #Scenario: To test orange HRM Web application using valid credentials
+    #Given I am in the orange HRM login page
+    #When user provides the valid user ID
+    #And user provides clid password
+    #And user click the login button
+    #Then I should see a dashboard text in the home page 
   #@tag2
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
