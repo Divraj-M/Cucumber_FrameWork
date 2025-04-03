@@ -97,12 +97,12 @@
         </dependency>
 
         <!-- ❗ Fixing Missing Dependency ❗ -->
-        <dependency>
+       <!-- <dependency>
             <groupId>com.expleo</groupId>
             <artifactId>TestNG-Assessment</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
